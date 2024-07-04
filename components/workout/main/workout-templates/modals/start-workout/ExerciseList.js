@@ -1,30 +1,14 @@
 import { View, Text, StyleSheet } from "react-native";
 import { ColorPalette } from "../../../../../../ColorPalette";
 
-export default function ExerciseList({ exercises, exerciseSets }) {
+export default function ExerciseList({ exercises, workout }) {
   return (
     <View style={styles.container}>
       {exercises.map((exercise, index) => (
         <Text style={styles.text} key={Math.random()}>
           {index === 5 && exercises.length > 5
-            ? `${
-                exercise.name +
-                ` (${
-                  exercise.equipment[0].toUpperCase() +
-                  exercise.equipment.slice(1)
-                })` +
-                " x " +
-                exerciseSets[exercise.reactId].length
-              } + ${workout.exercises.length - 5} more`
-            : `${
-                exercise.name +
-                ` (${
-                  exercise.equipment[0].toUpperCase() +
-                  exercise.equipment.slice(1)
-                })` +
-                " x " +
-                exerciseSets[exercise.reactId].length
-              }`}
+            ? `${exercise.name} \n +${workout.exercisesNew.length - 5} more`
+            : `${exercise.name}`}
         </Text>
       ))}
     </View>

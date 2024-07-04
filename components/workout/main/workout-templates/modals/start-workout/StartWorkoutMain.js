@@ -39,10 +39,7 @@ export default function StartWorkoutMain({ workout, handleClose }) {
     <View style={styles.container}>
       <Text style={styles.title}>{workout.name}</Text>
 
-      <ExerciseList
-        exercises={exercisesToShow}
-        exerciseSets={workout.exerciseSets}
-      />
+      <ExerciseList exercises={exercisesToShow} workout={workout} />
       {isActive && (
         <Text style={styles.warning}>
           Starting workout will overide current workout

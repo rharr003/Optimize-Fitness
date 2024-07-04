@@ -19,7 +19,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "expo": "^49.0.6",
     "expo-blur": "~12.4.1",
-    "expo-dev-client": "~2.4.8",
+    "expo-dev-client": "~2.4.13",
     "expo-haptics": "~12.4.0",
     "expo-notifications": "~0.20.1",
     "expo-screen-orientation": "~6.0.5",

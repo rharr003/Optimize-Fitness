@@ -77,7 +77,7 @@ export default function TemplateModals({ showModal, setShowModal }) {
 
 const styles = StyleSheet.create({
   modal: {
-    height: 300,
+    height: 350,
   },
 
   modalSmall: {
